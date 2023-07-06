@@ -16,7 +16,6 @@ public class RunTestNG {
 
     @BeforeMethod
     public void createDriver() {
-        //WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
