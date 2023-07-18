@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Annotation" verbose="1">
+    <test name="FirstTest">
+        <classes>
+            <class name="Bai10_AnnotationTestNG.PriorityAnnotation"/>
+        </classes>
+    </test>
+</suite>
