@@ -3,13 +3,16 @@ package BaiTap;
 import Common.baseTest02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class baiTap02 extends baseTest02 {
 
-    @Test(priority = 1)
+    @BeforeMethod
     public void testSignIn() {
         System.out.println("Login");
         driver.get("https://cms.anhtester.com/login");
@@ -22,7 +25,7 @@ public class baiTap02 extends baseTest02 {
         sleep(2);
     }
 
-    @Test(priority = 2)
+    @Test
     public void addCategory() {
         System.out.println("Add Category");
         driver.findElement(By.xpath("//span[normalize-space()='Products']")).click();
@@ -59,5 +62,17 @@ public class baiTap02 extends baseTest02 {
         //Click save button
         driver.findElement(By.xpath("//button[normalize-space()='Save']")).click();
         sleep(2);
+
+        //Search lai cattegory vừa add
+        driver.findElement(By.xpath("//input[@id='search']")).sendKeys("vutest");
+        action.sendKeys(Keys.ENTER).perform();
+        sleep(1);
+
+        String searchElement = driver.findElement(By.xpath("//tbody//tr[1]//td[2]")).getText();
+        System.out.println("Get Category item:"+ searchElement);
+        Assert.assertEquals(searchElement, "vutest");
+        sleep(1);
+
+
     }
 }
