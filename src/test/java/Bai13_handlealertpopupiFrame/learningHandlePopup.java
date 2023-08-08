@@ -1,6 +1,6 @@
 package Bai13_handlealertpopupiFrame;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.Set;
 
-public class learningHandlePopup extends baseTest {
+public class learningHandlePopup extends baseTest_OLD {
 
     @Test
     public void testPopup() {

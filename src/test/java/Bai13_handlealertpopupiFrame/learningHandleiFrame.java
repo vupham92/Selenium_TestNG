@@ -1,11 +1,10 @@
 package Bai13_handlealertpopupiFrame;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.testng.annotations.Test;
 
-public class learningHandleiFrame extends baseTest {
+public class learningHandleiFrame extends baseTest_OLD {
 
     @Test
     public void testLearningHandleiFrame(){

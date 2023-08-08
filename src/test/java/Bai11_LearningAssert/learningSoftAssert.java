@@ -1,13 +1,12 @@
 package Bai11_LearningAssert;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class learningSoftAssert extends baseTest {
+public class learningSoftAssert extends baseTest_OLD {
     @Test
     public void testSoftAssert(){
         driver.get("http://testphp.vulnweb.com/login.php");

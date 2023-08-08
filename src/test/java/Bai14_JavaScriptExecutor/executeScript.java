@@ -1,13 +1,13 @@
 package Bai14_JavaScriptExecutor;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import vuTest.keywords.WebUI;
 
-public class executeScript extends baseTest {
+public class executeScript extends baseTest_OLD {
 
     @Test
     public void testScript01(){

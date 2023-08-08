@@ -7,14 +7,15 @@ import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
 
-public class baseTest {
+public class baseTest_OLD {
+
     public static WebDriver driver;
 
     @BeforeMethod
     public void createDriver() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
     }
 
@@ -35,4 +36,3 @@ public class baseTest {
     }
 
 }
-

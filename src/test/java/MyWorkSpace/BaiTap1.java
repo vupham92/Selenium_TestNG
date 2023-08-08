@@ -1,13 +1,12 @@
 package MyWorkSpace;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BaiTap1 extends baseTest {
+public class BaiTap1 extends baseTest_OLD {
     @Test
     public void testSignin(){
         driver.get("https://cms.anhtester.com/login");

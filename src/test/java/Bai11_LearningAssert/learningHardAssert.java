@@ -1,10 +1,10 @@
 package Bai11_LearningAssert;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class learningHardAssert extends baseTest {
+public class learningHardAssert extends baseTest_OLD {
 
 
     @Test(priority = 1)

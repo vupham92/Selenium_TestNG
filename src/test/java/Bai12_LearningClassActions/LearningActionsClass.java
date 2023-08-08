@@ -1,15 +1,14 @@
 package Bai12_LearningClassActions;
 
-import Common.baseTest;
+import Common.baseTest_OLD;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 
 
-public class LearningActionsClass extends baseTest {
+public class LearningActionsClass extends baseTest_OLD {
 //    @Test
     public void TestSendKeys(){
         driver.get("https://www.google.com/");
